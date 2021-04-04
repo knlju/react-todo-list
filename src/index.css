@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #dee0dd;
+}
+
+.container {
+  background-color: white;
+  max-width: 720px;
+  margin: 1rem auto;
+  padding: 1rem max(1rem, 3%);
+}
+
+.container h1 {
+  text-align: center;
+}
+
+/* -------------------------------------------------- */
+/* ADD T0D0 FORM  */
+
+.add-todo-form {
+  display: flex;
+}
+
+.add-todo-form input {
+  flex: 4;
+  padding: 0.7rem 0.7rem;
+  font-size: 1.3rem;
+  min-width: 0;
+}
+
+.add-todo-form button {
+  flex: 1;
+  padding: 0.7rem 0.7rem;
+  font-size: 1.3rem;
+  min-width: 0;
+}
+
+/* -------------------------------------------------- */
+/* T0D0S LIST */
+
+.todo-list {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  margin: 1rem;
+}
+
+.todo {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.todo .todo-text{
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  flex: 4;
+}
+
+.todo .todo-text textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+}
+
+.todo .todo-options {
+  flex: 1;
+  padding: 0.7rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.todo-options button {
+  font-size: 1.3rem;
+  padding: 0.7rem;
+  height: 3rem;
+  align-items: center;
+}
+
+.todo .toggle-done {
+  font-size: 1rem;
+  /*padding: 0rem;*/
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+}
