@@ -5,7 +5,7 @@ function AddTodo({addTodo}) {
   const [inputText, setInputText] = useState("")
 
   const addNewTodo = () => {
-    if (inputText) addTodo(inputText)
+    if (inputText.trim()) addTodo(inputText)
     else return
     setInputText("")
   }
