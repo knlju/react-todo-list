@@ -1,5 +1,5 @@
 # react-todo-list
-CRUD TODO list. Made using React Hooks.
+CRUD TODO list. Made using React Hooks. Saves todos in local storage.
 
 Preview: 
 
