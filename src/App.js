@@ -1,10 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import TodoList from "./components/TodoList";
 import AddTodo from "./components/AddTodo";
 
 function App() {
 
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos")) || [])
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos))
+  },[todos])
 
   const removeTodo = key => setTodos(todos.filter(todo => todo.key !== key))
   const addTodo = text => setTodos([...todos, {key: new Date().getTime(), text}])
